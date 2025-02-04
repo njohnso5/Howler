@@ -1,0 +1,20 @@
+services:
+  proxy:
+    image: nginx:latest
+    restart: unless-stopped
+    volumes:
+      - ./proxy/default.conf.template:/etc/nginx/templates/default.conf.template
+    ports:
+      - "80:80"
+
+  hw5:
+    build:
+      dockerfile: ./Homework5/Dockerfile
+    restart: unless-stopped
+    volumes:
+      - ./Homework5/static:/app/static
+      - ./Homework5/templates:/app/templates
+      - ./Homework5/server.js:/app/server.js
+      - ./Homework5/src:/app/src
+    env_file:
+      - .env

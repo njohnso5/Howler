@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Howler Main Page</title>
+        <link rel="stylesheet" href="css/post.css">
+        <link rel="stylesheet" href="css/header.css">
+        <link rel="stylesheet" href="css/responsive.css">
+        <script src="js/home.js" type="module"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    </head>
+    <body>
+        <header class="bg-light">
+            <h1 class="text-center">Howler</h1>
+            <div class="position-absolute top-0 end-0" id="your-info">
+                <div class="d-flex flex-row-reverse">
+                    <img src="images/avatarplaceholder.jpg" id="your-avatar" class="h-100 w-100">
+                    <div class="d-flex flex-column mb-3">
+                        <h3 id="your-name" class="">Placeholder</h2>
+                        <h3 class="text-end"><a href="./"  id="your-username">Placeholder</a></h3>
+                        <button id="logout">Logout</button>
+                    </div>
+                </div>
+            </div>  
+        </header>
+        <section class="text-center">
+            <input type="text" id="howltext" class="mb-3 text-center" placeholder="What's howling?">
+            <br>
+            <button id="howl" class="btn btn-secondary">Howl</button>
+        </section>
+        <hr>
+        <section id="howl_list" class="">
+
+        </section>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    </body>
+</html>

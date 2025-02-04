@@ -1,0 +1,9 @@
+#profile_info {
+    width: 50%;
+    position: relative;
+    left: 25%;
+}
+
+#current-profile-name {
+    top: 20%;
+}

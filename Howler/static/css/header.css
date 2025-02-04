@@ -1,0 +1,19 @@
+header {
+    height: 10vw;
+    width: 100%;
+    margin-bottom: 1vw;
+    font-family:'Courier New', Courier, monospace;
+}
+
+h1 {
+    position: relative;
+    top: 0.5vw;
+}
+
+#your-info {
+    width: auto;
+}
+
+a {
+    text-decoration: none!important;
+}
